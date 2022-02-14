@@ -6,8 +6,8 @@
   "extends": [
     "plugin:react/recommended",
     "airbnb",
-    "prettier",
     "plugin:prettier/recommended",
+    "prettier",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
@@ -24,7 +24,7 @@
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": [
-      "warn",
+      "error",
       {
         "endOfLine": "auto"
       }
