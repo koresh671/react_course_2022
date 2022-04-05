@@ -1,15 +1,28 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import ProductCounter from "./ProductCounter";
 
 const App = () => {
+  const [orangeCount, setOrangeCount] = useState(0);
+  const [appleCount, setAppleCount] = useState(0);
   return (
     <div className="App">
-      <ProductCounter product={{ productName: "Orange" }} />
-      <ProductCounter product={{ productName: "Apple", count: 10 }} />
-      <ProductCounter product={{ productName: "Pineapple", count: 35 }} />
-      <ProductCounter product={{ productName: "Watermelon", count: 0 }} />
+      <ProductCounter
+        productName="Orange"
+        count={orangeCount}
+        setCount={setOrangeCount}
+      />
+      <ProductCounter
+        productName="Apple"
+        count={appleCount}
+        setCount={setAppleCount}
+      />
+      <ProductCounter
+        productName="Orange"
+        count={orangeCount}
+        setCount={setOrangeCount}
+      />
     </div>
   );
 };
